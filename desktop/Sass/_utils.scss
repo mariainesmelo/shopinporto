@@ -1,0 +1,90 @@
+.animate{
+    -webkit-transition: all $animationtime ease;
+    -moz-transition: all $animationtime ease;
+    -ms-transition: all $animationtime ease;
+    -o-transition: all $animationtime ease;
+    transition: all $animationtime ease;
+}
+
+.textleft{
+    text-align: left;
+}
+.textcenter{
+    text-align: center;
+}
+.textright{
+    text-align: right;
+}
+
+.primary{
+    color: $primary;
+}
+.secondary{
+    color: $secondary;
+}
+.graydark{
+    color: $graydark;
+}
+.gray{
+    color: $gray;
+}
+.graylight{
+    color: $graylight;
+}
+.white{
+    color: $white;
+}
+
+.imgfit{
+    display: block;
+    width: 100%;
+    img, source{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+//paddings
+
+
+.p2{
+    padding: 0px 7.5px!important;
+    @media(max-width: $mobile){
+        padding: 0!important;
+    }
+}
+.pr{
+    padding-right: 7.5px!important;
+    @media(max-width: $mobile){
+        padding: 0!important;
+    }
+}
+.pl{
+    padding-left: 7.5px!important;
+    @media(max-width: $mobile){
+        padding: 0!important;
+    }
+}
+.mt{
+    margin-top: 15px!important;
+}
+.mb{
+    margin-bottom: 15px!important;
+}
+
+//None
+
+.visivel-d{
+    display: block;
+    @media(max-width: $mobile){
+        display: none;
+    }
+}
+
+.visivel-sem-glide{
+    display: none;
+    @media(max-width: $mobile){
+        display: inline-flex;
+    }
+}

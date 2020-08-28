@@ -1,0 +1,206 @@
+body{
+  /* color: #F0F8FB; */
+  color: black;
+  font-family: 'Regular';
+}
+
+.container-titulo{
+  h1{
+    font-family: 'Regular Bold';
+    color: #10324D;
+    margin-top:54px;
+    margin-bottom:32px;
+    font-size:48px;
+  span{
+      color: $primary;
+    }
+  }
+}
+
+.container-search{
+    .search-tag{
+      display:flex;
+      .search-white-area{
+        display: flex;
+        background-color: white;
+        padding-left: none;
+        width: 75%;
+        border-radius:5px;
+        .search-tag-result{
+          display:flex;
+          height: 100%;
+        }
+      }
+      .button-search{
+        padding-right: 0px;
+        .desktop{
+          width: 100%;
+          border-radius: 5px;
+          background-color: $primary;
+          height: 100%;
+          color:white;
+          border:none;
+          @media(max-width: $mobile){
+            display:none;
+          }
+        }
+        .mobile{
+          display:none;
+            @media(max-width: $mobile){
+            border-radius: 5px;
+            background-color: $primary;
+            color:white;
+            border:none;
+            margin-top: 0;
+            padding: 0px;
+          }
+        }
+        
+      }
+    }
+}
+
+.ancora-product-page{
+ text-decoration: none;
+ color:#10324D;
+}
+
+.container-filters{
+  display:block;
+  @media(max-width: $mobile){
+    display:none;
+  }
+  .container-filter-types{
+    font-family: 'Regular Regular';
+    background-color: white;
+    border-radius: 5px;
+    padding-left:32px;
+    padding-top:10px;
+    padding-bottom: 32px;
+    .categories-checkbox{
+      div{
+        display:flex;
+        justify-content: space-between;
+      }
+      input{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.filter-search{
+  font-family: 'Regular';
+  font-style: bold;
+  font-size: 24px;
+  color: #10324D;
+}
+
+
+.destaque-checkbox{
+  input{
+    margin-bottom: 20px;
+  }
+}
+
+
+.zonas-checkbox{
+  input{
+    margin-bottom: 20px;
+  }
+}
+
+.marcas-checkbox{
+  input{
+    margin-bottom: 20px;
+  }
+}
+
+.ver-mais-filters{
+  font-family: 'Regular';
+  font-style: bold;
+  font-size: 16px;;
+  border-bottom:  1px solid $primary;
+ }
+
+.container-product-card{
+  display:flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 5px;
+  .product-card-img{
+    display:flex;
+    border-radius: 5px;
+    #img-id{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+  .product-card-description{
+    display: flex;
+    .product-card-name-description-schedule-address-promo{
+      display:flex;
+      flex-direction: column;
+      padding-left:25px;
+      .h3-search-category{
+        font-family: 'Regular';
+        font-style: bold;
+        font-size: 16px;
+        margin-bottom: 18px;
+      }
+      .h4-search-category{
+        font-family: 'Regular';
+        font-style: bold;
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color:#10324D;
+      }
+      .p-schedule-search{
+        font-family: 'Regular Regular';
+        margin-bottom: 0px;
+      }
+      .p-address-search{
+        font-family: 'Regular Regular';
+        margin-top: 10px;
+      }
+      .promocoes-product-card-search{
+        display:flex;
+        p{
+          font-family: 'Regular Bold';
+        background-color:rgba(44, 161, 198, 0.15);
+        border-radius: 5px;
+        color: $primary;
+        max-width: 100%;
+        margin-right: 0px;
+        padding:8px;
+        font-weight: 590;
+        }
+      }
+    }
+  }
+  .container-map-fav-share-rate{
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+    flex:1;
+    
+    
+    .container-map-fav-share{
+      display:flex;
+      justify-content: space-between;
+     margin-top:17px;
+    }
+    .rate-search{
+      display:flex;
+      align-self: center;
+     p{
+       background-color:rgba(44, 161, 198, 0.15);
+       margin-right:0px;
+       border-radius: 5px ;
+       padding:8px;
+     }
+    }
+  }
+}
+

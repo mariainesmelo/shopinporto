@@ -1,0 +1,65 @@
+.gridrowfull{
+    width: $gridwidth;
+}
+.gridrow{
+    width: $gridwidthd;
+    margin: 0 auto;
+    @media(max-width: $mobile){
+        width: $gridwidthm;
+    }
+}
+
+.gridrowfull, .gridrow{
+    display: flex;
+    flex-wrap: wrap;
+    .col-d{
+        flex: 1;
+        box-sizing: border-box;
+        padding-left: $gridgutter / 2;
+        padding-right: $gridgutter / 2;
+    }
+    .offset-d{
+        margin-left: 0;
+    }
+    @for $i from 1 through $gridcolumns {
+        .col-d-#{$i} {
+            box-sizing: border-box;
+            width: percentage($i/$gridcolumns);
+            padding-left: $gridgutter / 2;
+            padding-right: $gridgutter / 2;
+        }
+        .offset-d-#{$i} {
+            margin-left: percentage($i/$gridcolumns);
+        }
+    }
+    @media(max-width: $mobile){
+        .col{
+            flex: 1;
+            box-sizing: border-box;
+            padding-left: $gridgutter / 2;
+            padding-right: $gridgutter / 2;
+        }
+        @for $i from 1 through $gridcolumns {
+            .col-#{$i} {
+                box-sizing: border-box;
+                width: percentage($i/$gridcolumns);
+                padding-left: $gridgutter / 2;
+                padding-right: $gridgutter / 2;
+            }
+            .offset-#{$i} {
+                margin-left: percentage($i/$gridcolumns);
+            }
+        } 
+    }
+    &.nogutter{
+        .col, .col-d {
+            padding: 0;
+        }
+        @for $i from 1 through $gridcolumns {
+            .col-#{$i}, .col-d-#{$i} {
+                padding: 0;
+            }
+        }
+    }
+}
+

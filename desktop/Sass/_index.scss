@@ -1,0 +1,413 @@
+.homepage{
+    h1, 
+    h2, h3, h4, h5, h6, p, a, b, u, i, ol, ul, li {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+}
+
+
+.container-pesquisa-geral{
+        height: 360px;
+        background-image: url("../img/index/banner.png");
+        position: relative;
+        display:flex;
+        justify-content: center;
+        box-shadow: 0px 10px 50px rgba(16, 50, 77, 0.25);
+        @media(max-width: $mobile){
+            height: 320px;
+            background-image: url("../img/index/banner_mobile.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .container-pesquisa-text-area{  
+            height: 60px;
+            position: absolute;
+            top: 330px;
+            input{
+                height: 100%;
+                width: 100%;
+                padding-left: 15px;
+                border: none;
+                border-radius: 5px;
+                @media(max-width: $mobile){
+                    height:60px;
+                }
+            }
+            .pesquisa-button{
+                a{
+                    width: 100%;
+                    .pesquisa-button-submit{
+                        height: 60px;
+                        background-color: $primary;
+                        border:none;
+                        color:$white;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 5px;
+                        font-size: 20px;
+                        line-height: 24px;
+                        box-shadow: 0px 10px 50px rgba(16, 50, 77, 0.25);
+                        @media(max-width: $mobile){
+                            height:60px;
+                            margin-top:16px;
+                        }
+                        }
+                }
+                
+            }        
+        }
+    
+}
+
+/* .container-pesquisa-geral{
+    border: solid black 1px;
+    height: 360px;
+    background-image: url("../img/index/banner.png");
+    position: relative;
+    display:flex;
+    justify-content: center;
+    .container-pesquisa-text-area{
+        height: 60px;
+        position: absolute;
+        top: 330px;
+        input{
+            height: 100%;
+            width: 100%;
+            padding-left: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        .pesquisa-button{
+            a{
+                width: 100%;
+                .pesquisa-button-submit{
+                    height: 60px;
+                    background-color: $primary;
+                    border:none;
+                    color:$white;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    }
+            }
+            
+        }        
+    }
+} */
+
+
+
+.container-blog{
+    margin-top: 96px;
+    .container-blog-titulo{
+        margin-bottom: 48px;
+        @media (max-width:$mobile){
+            margin-bottom: 32px;
+            margin-top: 86px;
+        }
+        h2{
+            font-family: 'Regular Bold';
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 16px;
+        }
+    }
+    .container-promocoes-1{
+        .promocoes-1-index{
+            background-color: white;
+            box-shadow: $boxShadowindex;
+            border-radius: 5px;
+            height: 100%;
+            .background-p-promocoes-index{
+                background-color: rgba(44, 161, 198, 0.15);
+                border-radius: 5px;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                width: 110px;
+                /* height:30px; */
+            }
+            .padding-inside{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 22px;
+                min-height: 55%;
+                @media (max-width:$mobile){
+                    min-height: auto;
+                }
+                .coluna{
+                    display:block;
+                }
+                h2{
+                    font-size: 24px;
+                    font-family: 'Regular Bold';
+                    line-height: 29px;
+                }
+                p{
+                    line-height: 24px;
+                    font-size: 16px;
+                }
+                div{
+                    display:flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .para-1{
+                    margin-top:16px;
+                }
+            }
+        }
+        
+    }
+
+}
+
+.h1-index{
+    color:$white;
+    font-size: 32px;
+}
+
+// O que procuras
+
+.container-filtro-geral{
+    margin-top: 96px;
+    .filtro-titulo{
+        h2{
+            font-family: 'Regular Bold';
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 16px;
+        }
+        p{
+            font-family: 'Regular Regular';
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .filtro-text-geral{
+       .filtro-texto {
+        p{
+            margin-bottom:48px;
+        }
+       } 
+    }
+}
+
+
+// glide
+.filtro-previous{
+border:1px solid $primary;
+}
+
+.filtro-next{
+    border:1px solid $primary;
+    }
+
+.filtro-card{
+    text-align: center;
+
+}
+
+.filtro-img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:164px;
+    width:164px;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    box-shadow: $boxShadowindex;
+    
+
+}
+
+.img-size-icon{
+    height: auto;
+    width: 64px;
+    position: absolute;
+}
+
+.filtro-text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+
+.container-laurear-a-pevide{
+    .barra-meses{
+        border-radius: 36px;
+        border:1px solid $primary;
+        box-shadow: 0px 10px 30px rgba(16, 50, 77, 0.04);
+        background-color: white;
+        height: 72px;
+        display:flex;
+        align-items: center;
+        @media(max-width:$mobile) {
+            display: flex;
+            justify-content: space-between;
+
+        }
+        button{
+            background-color: $primary;
+            border-radius: 24px;
+            width: 48px;
+            height: 48px;
+            border: none;
+        }
+        p{
+            font-family: 'Regular Bold';
+            font-size: 20px;
+            line-height: 24px;
+            .p-gray{
+                opacity: 0.25;
+
+            }
+        }
+    }
+    .titulo-laurear-a-pevide{
+        h2{
+            font-family: 'Regular Bold';
+            font-size: 32px;
+            margin-top:90px;
+            margin-bottom:36px;
+        }
+    }
+    .product-list-laurear-a-pevide{
+        display:flex;
+        .product-list-row1{
+            margin-top:36px;
+            
+            .product-card-laurear-a-pevide{
+                padding: 0px;
+                height: auto;
+                @media(max-width:$mobile){
+                    margin-bottom:16px;
+                }
+                .card-laurear-a-pevide{
+                    padding: 7.5px;
+                    background-color: white;
+                    height:119px;
+                    display:flex;
+                    align-items: center;
+                    
+                    //Pode ser necessário mudar
+                    .data-evento{
+                        display:flex;
+                        flex-direction: column;
+                        align-self: center;
+                        font-size: 32px;
+                        font-family: 'Regular Bold';
+                        .agosto{
+                            font-weight: 590;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                    .info-evento{
+                        display:flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .workshop{
+                            font-size: 16px;
+                            line-height: 18px;
+                            font-family: 'Regular Bold';
+                        }
+                        .laurear-time-schedule{
+                            margin-top: 16px;
+                            display:flex;
+                            justify-content: space-between;
+                        }
+                    }
+                    .icon-local-evento{
+                        display:flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: -50px;
+                    }
+                }
+            }
+        }
+        .product-list-row2{
+            margin-top: 15px;
+            
+            margin-top:36px;
+            
+            .product-card-laurear-a-pevide{
+                padding: 0px;
+                .card-laurear-a-pevide{
+                    padding: 7.5px;
+                    height:100%;
+                    //Pode ser necessário mudar
+                    .data-evento{
+                        display:flex;
+                        flex-direction: column;
+                        align-self: center;
+                        font-weight: 590;
+                        font-size: 32px;
+                        /* font-height: 38px; */
+                        margin-top: -36px;
+                        .agosto{
+                            font-weight: 590;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                    .info-evento{
+                        display:flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .workshop{
+                            font-weight: 590;
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+                        .laurear-time-schedule{
+                            display:flex;
+                            justify-content: space-between;
+                        }
+                    }
+                    .icon-local-evento{
+                        display:flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top:15px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .ver-todos-os-eventos-index{
+        p{
+            font-family: 'Regular Bold';
+            margin-top: 32px;
+        }
+    }
+}
+
+
+.banner{
+    margin-top: 101px;
+    @media(max-width:$mobile){
+        margin-top: 101px;  
+        img{
+            width:100%;
+        }
+    }
+}
+

@@ -1,0 +1,858 @@
+/* line 1, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull {
+  width: 100%;
+}
+
+/* line 5, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrow {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+  /* line 5, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrow {
+    width: 670px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 5, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrow {
+    width: 100%;
+  }
+}
+
+/* line 17, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull, .gridrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col1, .gridrow .col1 {
+  box-sizing: border-box;
+  width: 8.33333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset1, .gridrow .offset1 {
+  margin-left: 8.33333%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col2, .gridrow .col2 {
+  box-sizing: border-box;
+  width: 16.66667%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset2, .gridrow .offset2 {
+  margin-left: 16.66667%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col3, .gridrow .col3 {
+  box-sizing: border-box;
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset3, .gridrow .offset3 {
+  margin-left: 25%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col4, .gridrow .col4 {
+  box-sizing: border-box;
+  width: 33.33333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset4, .gridrow .offset4 {
+  margin-left: 33.33333%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col5, .gridrow .col5 {
+  box-sizing: border-box;
+  width: 41.66667%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset5, .gridrow .offset5 {
+  margin-left: 41.66667%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col6, .gridrow .col6 {
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset6, .gridrow .offset6 {
+  margin-left: 50%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col7, .gridrow .col7 {
+  box-sizing: border-box;
+  width: 58.33333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset7, .gridrow .offset7 {
+  margin-left: 58.33333%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col8, .gridrow .col8 {
+  box-sizing: border-box;
+  width: 66.66667%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset8, .gridrow .offset8 {
+  margin-left: 66.66667%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col9, .gridrow .col9 {
+  box-sizing: border-box;
+  width: 75%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset9, .gridrow .offset9 {
+  margin-left: 75%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col10, .gridrow .col10 {
+  box-sizing: border-box;
+  width: 83.33333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset10, .gridrow .offset10 {
+  margin-left: 83.33333%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col11, .gridrow .col11 {
+  box-sizing: border-box;
+  width: 91.66667%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset11, .gridrow .offset11 {
+  margin-left: 91.66667%;
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .col12, .gridrow .col12 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull .offset12, .gridrow .offset12 {
+  margin-left: 100%;
+}
+
+@media (min-width: 750px) {
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab1, .gridrow .coltab1 {
+    box-sizing: border-box;
+    width: 8.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab1, .gridrow .offsettab1 {
+    margin-left: 8.33333%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab2, .gridrow .coltab2 {
+    box-sizing: border-box;
+    width: 16.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab2, .gridrow .offsettab2 {
+    margin-left: 16.66667%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab3, .gridrow .coltab3 {
+    box-sizing: border-box;
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab3, .gridrow .offsettab3 {
+    margin-left: 25%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab4, .gridrow .coltab4 {
+    box-sizing: border-box;
+    width: 33.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab4, .gridrow .offsettab4 {
+    margin-left: 33.33333%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab5, .gridrow .coltab5 {
+    box-sizing: border-box;
+    width: 41.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab5, .gridrow .offsettab5 {
+    margin-left: 41.66667%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab6, .gridrow .coltab6 {
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab6, .gridrow .offsettab6 {
+    margin-left: 50%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab7, .gridrow .coltab7 {
+    box-sizing: border-box;
+    width: 58.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab7, .gridrow .offsettab7 {
+    margin-left: 58.33333%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab8, .gridrow .coltab8 {
+    box-sizing: border-box;
+    width: 66.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab8, .gridrow .offsettab8 {
+    margin-left: 66.66667%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab9, .gridrow .coltab9 {
+    box-sizing: border-box;
+    width: 75%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab9, .gridrow .offsettab9 {
+    margin-left: 75%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab10, .gridrow .coltab10 {
+    box-sizing: border-box;
+    width: 83.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab10, .gridrow .offsettab10 {
+    margin-left: 83.33333%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab11, .gridrow .coltab11 {
+    box-sizing: border-box;
+    width: 91.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab11, .gridrow .offsettab11 {
+    margin-left: 91.66667%;
+  }
+  /* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coltab12, .gridrow .coltab12 {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 39, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsettab12, .gridrow .offsettab12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk1, .gridrow .coldesk1 {
+    box-sizing: border-box;
+    width: 8.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk1, .gridrow .offsetdesk1 {
+    margin-left: 8.33333%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk2, .gridrow .coldesk2 {
+    box-sizing: border-box;
+    width: 16.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk2, .gridrow .offsetdesk2 {
+    margin-left: 16.66667%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk3, .gridrow .coldesk3 {
+    box-sizing: border-box;
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk3, .gridrow .offsetdesk3 {
+    margin-left: 25%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk4, .gridrow .coldesk4 {
+    box-sizing: border-box;
+    width: 33.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk4, .gridrow .offsetdesk4 {
+    margin-left: 33.33333%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk5, .gridrow .coldesk5 {
+    box-sizing: border-box;
+    width: 41.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk5, .gridrow .offsetdesk5 {
+    margin-left: 41.66667%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk6, .gridrow .coldesk6 {
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk6, .gridrow .offsetdesk6 {
+    margin-left: 50%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk7, .gridrow .coldesk7 {
+    box-sizing: border-box;
+    width: 58.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk7, .gridrow .offsetdesk7 {
+    margin-left: 58.33333%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk8, .gridrow .coldesk8 {
+    box-sizing: border-box;
+    width: 66.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk8, .gridrow .offsetdesk8 {
+    margin-left: 66.66667%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk9, .gridrow .coldesk9 {
+    box-sizing: border-box;
+    width: 75%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk9, .gridrow .offsetdesk9 {
+    margin-left: 75%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk10, .gridrow .coldesk10 {
+    box-sizing: border-box;
+    width: 83.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk10, .gridrow .offsetdesk10 {
+    margin-left: 83.33333%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk11, .gridrow .coldesk11 {
+    box-sizing: border-box;
+    width: 91.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk11, .gridrow .offsetdesk11 {
+    margin-left: 91.66667%;
+  }
+  /* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .coldesk12, .gridrow .coldesk12 {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 52, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+  .gridrowfull .offsetdesk12, .gridrow .offsetdesk12 {
+    margin-left: 100%;
+  }
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col1, .gridrow.nogutter .col1 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col2, .gridrow.nogutter .col2 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col3, .gridrow.nogutter .col3 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col4, .gridrow.nogutter .col4 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col5, .gridrow.nogutter .col5 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col6, .gridrow.nogutter .col6 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col7, .gridrow.nogutter .col7 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col8, .gridrow.nogutter .col8 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col9, .gridrow.nogutter .col9 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col10, .gridrow.nogutter .col10 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col11, .gridrow.nogutter .col11 {
+  padding: 0;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_grid.scss */
+.gridrowfull.nogutter .col12, .gridrow.nogutter .col12 {
+  padding: 0;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* line 2, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* line 6, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 9, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+main {
+  display: block;
+}
+
+/* line 12, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 16, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* line 21, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* line 25, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 28, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/* line 33, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* line 37, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* line 43, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 46, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 53, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 56, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 59, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* line 62, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/* line 72, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/* line 76, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/* line 80, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* line 86, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* line 93, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* line 99, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/* line 102, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/* line 110, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 113, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 116, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/* line 121, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 125, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/* line 129, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 132, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* line 136, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+details {
+  display: block;
+}
+
+/* line 139, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* line 142, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+template {
+  display: none;
+}
+
+/* line 145, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.animate {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* line 9, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.textleft {
+  text-align: left;
+}
+
+/* line 12, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.textcenter {
+  text-align: center;
+}
+
+/* line 15, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.textright {
+  text-align: right;
+}
+
+/* line 19, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.primary {
+  color: #f5d71f;
+}
+
+/* line 22, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.secondary {
+  color: #ff7425;
+}
+
+/* line 25, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.graydark {
+  color: #333;
+}
+
+/* line 28, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.gray {
+  color: #747474;
+}
+
+/* line 31, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.graylight {
+  color: #F3F3F3;
+}
+
+/* line 34, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.white {
+  color: #FFF;
+}
+
+/* line 38, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.imgfit {
+  display: block;
+  width: 100%;
+}
+
+/* line 41, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_utils.scss */
+.imgfit img, .imgfit source {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 1, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_search.scss */
+.container-geral {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 5, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_search.scss */
+.container-search {
+  display: flex;
+  background-color: lightblue;
+}
+
+/* line 10, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/_search.scss */
+.search-tag {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 12, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/styles.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 16, ../../../../../Users/mariainesmelo/Desktop/projeto360/sass/styles.scss */
+body {
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

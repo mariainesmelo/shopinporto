@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sass/glide.core.min.css" />
+    <!-- Include Choices JavaScript -->
+    <script src="js/glide.min.js"></script>
+    <link rel="stylesheet" href="Sass/styles.css">
+    <title>Document</title>
+</head>
+<!--  PRECISAMOS DE MODIFICAR O GLIDE -->
+<body>
+    
+    <div class="content">
+        <div class="glide">
+            <div class="glide">
+                <div class="glide__arrows gridrow" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--prev glide-button-style-prev-next" data-glide-dir="<"><</button>
+                    <button class="glide__arrow glide__arrow--next glide-button-style-prev-next" data-glide-dir=">">></button>
+                </div>
+                <!-- Acho que é ir para posição
+                <div class="glide__bullets gridrow" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0">Ir para posição 0</button>
+                    <button class="glide__bullet" data-glide-dir="=1">Ir para posição 1</button>
+                    <button class="glide__bullet" data-glide-dir="=2">Ir para posição 2</button>     
+                </div>
+            -->
+            </div>
+            <div class="filtro-card-geral-1 gridrow nogutter">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/PP/animais.png" alt="Animais" />
+                                </div>
+                                <div class="filtro-text">
+                                    Animais
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/antiguidades_obras_arte.png" alt="Antiguidades e Obras de Arte" />
+                                </div>
+                                <div class="filtro-text">
+                                    Antiguidades e Obras de Arte
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/PP/cultura_lazer.png" alt="Cultura e Lazer" />
+                                </div>
+                                <div class="filtro-text">
+                                    Cultura e Lazer
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/flores_plantas.png" alt="Flores e Plantas" />
+                                </div>
+                                <div class="filtro-text">
+                                Flores e plantas
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/fotografia_papelaria_grafica.png"
+                                        alt="Fotografia, papelaria e gráfica" />
+                                </div>
+                                <div class="filtro-text">
+                                    Fotografia, papelaria e gráfica
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/lar_decoracao_jardim.png" alt="Lar Decoração e Jardim" />
+                                </div>
+                                <div class="filtro-text">
+                                    Lar Decoração e Jardim
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/moda_contemporanea_vintage.png" alt="Moda contemporânea Vintage" />
+                                </div>
+                                <div class="filtro-text">
+                                    Moda contemporânea Vintage
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/moda_infantil.png" alt="Moda Infantil" />
+                                </div>
+                                <div class="filtro-text">
+                                    Moda Infantil
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/musica.png" alt="Musica" />
+                                </div>
+                                <div class="filtro-text">
+                                    Musica
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/ourivesaria.png" alt="Ourivesaria" />
+                                </div>
+                                <div class="filtro-text">
+                                    Ourivesaria
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/produtos_alimentares.png" alt="Produtos Alimentares" />
+                                </div>
+                                <div class="filtro-text">
+                                    Produtos Alimentares
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/produtos_regionais_artesanatos.png"
+                                        alt="Produtos Regionais e Artesanato" />
+                                </div>
+                                <div class="filtro-text">
+                                    Produtos Regionais e Artesanato
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/restauracao_bebida.png" alt="Restauração e bebida" />
+                                </div>
+                                <div class="filtro-text">
+                                    Restauração e bebida
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/sapataria_acessorio_marroquinaria.png"
+                                        alt="Sapataria, Acessórios e Marroquinaria" />
+                                </div>
+                                <div class="filtro-text">
+                                    Sapataria, Acessórios e Marroquinaria
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/saude_bem_estar_cuidados_pessoais.png"
+                                        alt="Saude, bem-estar e Cuidados Pessoais" />
+                                </div>
+                                <div class="filtro-text">
+                                    Saude, bem-estar e Cuidados Pessoais
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/servicos_utilidade_domestica.png"
+                                        alt="Serviços de Utilidade Doméstica" />
+                                </div>
+                                <div class="filtro-text">
+                                    Serviços de Utilidade Doméstica
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/tecnologia_equipamentos_eletronicos.png"
+                                        alt="Técnologia e Equipamentos Eletrónicos" />
+                                </div>
+                                <div class="filtro-text">
+                                    Técnologia e Equipamentos Eletrónicos
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/traje_fardas_festas.png" alt="Traje, Fardas e Festas" />
+                                </div>
+                                <div class="filtro-text">
+                                    Traje, Fardas e Festas
+                                </div>
+                            </li>
+                        </div>
+                        <div class="filtro-card col-d-2 p2">
+                            <li class="glide__slide">
+                                <div class="filtro-img">
+                                    <img class="img-size-icon" src="img/index/pp/turismo.png" alt="Turismo" />
+                                </div>
+                                <div class="filtro-text">
+                                    Turismo
+                                </div>
+                            </li>
+                        </div>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="js/glide.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.background-header{
+    color: #10324D;
+    font-family: 'Regular Bold';
+    height: 90px;
+    background-color: white;
+    .container-geral{
+        display: flex;
+        align-content: center;
+        height: 100%;
+        font-weight: 590;
+        font-size: 16px;
+        line-height: 18px;
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        .container-links{
+            div{
+                display:flex;
+                justify-content: space-between; 
+                p{
+                    color:#10324D; 
+                }
+            }
+        }
+        .container-language{
+            display:flex;
+            span{
+                color: $primary;
+            }
+            img{
+                width: 16px;
+            }
+        }
+        .login{
+            display:flex;
+            p{
+                color:#10324D; 
+                span{
+                color: $primary;
+                }
+            }
+        }
+        .img-header-hamburguer{
+            display:none;
+        }
+        @media(max-width: $mobile){
+            .none{
+                display:none;
+            }
+            .img-header-hamburguer{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

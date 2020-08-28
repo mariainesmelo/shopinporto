@@ -1,0 +1,21 @@
+{
+  "name": "shopinporto",
+  "version": "1.0.0",
+  "description": "ShopInPorto with a fake api",
+  "main": "index.js",
+  "author": "Henrique Vale",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./index.js",
+    "start-dev": "nodemon ./index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.1.4"
+  }
+}

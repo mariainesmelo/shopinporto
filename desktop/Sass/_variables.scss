@@ -1,0 +1,46 @@
+$primary:#2CA1C6;
+$secondary: #10324D;
+$graydark: #333;
+$gray: #747474;
+$graylight: #F3F3F3;
+$white: #FFF;
+$black: #000;
+
+$boxShadow: 0px 10px 30px rgba(16, 50, 77, 0.25);
+$boxShadowindex: 0px 10px 30px rgba(16, 50, 77, 0.07);
+
+$bodyfontfinal: "Regular"; //mudar este depois
+//$secundary-color: #2CA1C6;
+//$primary-color: #323232;
+
+
+$animationtime: 0.4s;
+
+$mobile: 500px;
+$desktop: 1200px;
+
+$gridcolumns: 12;
+$gridgutter: 30px;
+
+$gridwidth: 100%;
+$gridwidthd: $desktop - $gridgutter;
+$gridwidthm: 90%;
+
+$icomoon-font-family: "editstore" !default;
+$icomoon-font-path: "../fonts" !default;
+
+$icn-star: "\f005";
+$icn-facebook: "\e900";
+$icn-pinterest: "\e901";
+$icn-twitter: "\e902";
+$icn-chevron-down: "\e903";
+$icn-chevron-left: "\e904";
+$icn-chevron-right: "\e905";
+$icn-chevron-up: "\e906";
+$icn-heart: "\e907";
+$icn-minus: "\e908";
+$icn-plus: "\e909";
+$icn-reload: "\e90a";
+$icn-search: "\e90b";
+$icn-shopping-cart: "\e90c";
+

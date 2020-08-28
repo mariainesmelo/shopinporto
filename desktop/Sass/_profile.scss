@@ -1,0 +1,304 @@
+body{
+    background-color: #E5E5E5;
+}
+
+// Profile + Qr code
+
+.container-profile-qr-code{
+    margin-top: 30px;
+    .container-profile-background{
+        background-color: #10324D;
+        border-radius: 5px;
+        box-shadow: $boxShadow;
+        position: relative;
+        display:flex; 
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .profile-editar{
+            position: absolute;
+            top: 2%;
+            right: 2%;
+        }
+    .container-profile-text-img{
+            display:flex;
+            align-items: center;
+            padding-left: 8.3333333%;
+            @media(max-width: $mobile){
+                justify-content: center;
+                padding: 20px;
+            }
+            > div {
+                padding-left: 6%;
+                color: white;
+            }
+        }
+    }
+    .container-qr-code{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: $boxShadow;
+        @media(max-width:$mobile){
+            margin-top: 15px;   
+        }
+        .p-qr-text{
+        color: $primary
+        }
+    }
+}
+
+// Promocoes
+
+.container-promocoes-profile{
+    .promocoes-text{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .promocoes-1{
+        box-shadow: $boxShadow;
+        background-color: white;
+        padding:15px;
+        border-radius: 5px;
+        @media(max-width: $mobile){
+            margin-top: 15px;
+        }
+        > h3 {
+            font-size: 24px;
+            margin: 0;
+        }
+        > div 
+            {
+            display:flex;
+            align-items: center;
+            .data-promocoes-profile {
+                    background-color: rgba(44, 161, 198, 0.15);
+                    border-radius: 5px;
+                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Regular Bold';
+                
+                span{
+                    color: $primary;
+                }
+                img{
+                    margin-right: 5px;
+                }
+            }
+                
+        }
+        .button-promo-profile{
+            display:flex;
+            justify-content: space-between;
+            .promocoes-button{
+                border-radius: 5px;
+                background-color: #2CA1C6;
+                color: white;
+                padding: 15px 60px;
+                font-size: 16px;
+                border: none;
+            }
+        }
+    
+    }
+}
+.mobile{
+    display:none;
+    border-radius: 5px;
+    background-color: #2CA1C6;
+    color: white;
+    padding: 15px 60px;
+    font-size: 16px;
+    border: none;
+    @media(max-width: $mobile){
+        display:block;
+        border-radius: 5px;
+    background-color: #2CA1C6;
+    color: white;
+    padding: 15px 60px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    }
+}
+
+// Lojas e roteiros
+
+.container-loja-fav-rot-info{
+    h3{
+        font-size: 32px;
+line-height: 38px;
+font-family: 'Regular Bold';
+    }
+    .container-lojas-favoritas-profile{
+        background-color: white;
+        box-shadow: $boxShadow;
+        margin-top: 15px;
+        border-radius: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        h3{
+            padding: 15px;
+            
+        }
+        p{
+            @media(max-witdh: $mobile){
+            font-family: 'Regular Bold';
+        }
+            
+        }
+        .loja-favorita-1{
+            display:flex;
+            padding-left:15px;
+            @media(max-width: $mobile){
+                padding-bottom: 15px;
+                padding-left: 0px;
+                padding-top: 15px;
+                border-bottom: 1px solid rgba(16, 50, 77, 0.15);
+                margin: 0 15px;
+            }
+            .loja-favorita-text-1{
+                padding-left:15px;
+                @media(max-width: $mobile){
+                    padding-left: 0;
+                }
+                h4{                
+                    margin-top: 0px;
+                    /* font-weight: 590; */
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 12px;
+                }
+                p{
+                    margin-top:0px;
+                }
+            }
+        }
+    }
+    .container-os-roteiros-informacoes{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        padding-right: 0px;
+        @media(max-width:$mobile){
+            padding-left: 0px;
+        }
+            .container-os-roteiros-profile{
+                background-color: white;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: $boxShadow;
+                min-height: 400px;
+            }
+            .container-informacoes-profile{
+                display: flex;
+                flex-direction: column;
+                background-color: $white;
+                margin-top:15px;
+                padding: 15px;
+                box-shadow: $boxShadow;
+                border-radius: 5px;
+                height: 100%;
+                .container-flex-info-profile{
+                    align-content: center;
+                    height: 100%;
+                }
+                .profile-info-lojas-roteiro{
+                    .border{
+                        border-bottom: 1px solid rgba(16, 50, 77, 0.1);
+                        padding-bottom: 15px;   
+                        }
+                    .bottom{
+                        padding-top: 15px;
+                    }
+                }
+                .profile-avalicao-promocao{
+                    .border{
+                        border-bottom: 1px solid rgba(16, 50, 77, 0.1);
+                        padding-bottom: 15px;
+                        }
+                        .bottom{
+                            padding-top: 15px;
+                        }
+                } 
+                span{
+                    font-family: 'Regular Bold';
+                }
+                
+            }
+            
+    }
+}
+
+
+.none{
+    display:block;
+    @media(max-width: $mobile){
+        display:none;
+    }
+}
+
+// As minhas avaliações
+
+.container-as-minhas-avaliacoes-profile{
+    margin-top: 125px;
+    .as-minhas-avaliacoes-ver-todas-profile{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Regular Regular';
+        h3{
+            font-family: 'Regular Bold';
+            font-size: 32px;}
+        @media(max-width: $mobile){
+            p{display:none;}
+        }
+    }
+    .container-1-linha-de-avaliacao{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        .container-avaliacao-profile-1{
+            width:100%;
+            background-color:white;
+            box-shadow: $boxShadow;
+            border-radius: 5px;
+            padding: 32px;
+            @media(max-width:$mobile){
+                margin-top: 15px;
+            }
+            .container-img-titulo-data-avaliacao-edit-1{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .column{
+                    display:flex;
+                    flex-direction: column;
+                }
+            }
+            .container-descricao-avaliacao{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                @media(max-width:$mobile){
+                    flex-direction: column-reverse;
+                    align-items: flex-start;
+                }
+                p:last-child{
+                    background-color: rgba(44, 161, 198, 0.15);
+                    border-radius: 5px;
+                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Regular Bold';
+                }
+            }
+        }
+    }
+
+}

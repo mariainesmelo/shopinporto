@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Choices CSS -->
+    <link rel="stylesheet" href="Sass/choices.min.css" />
+    <!-- Include Choices JavaScript -->
+    <script src="js/choices.min.js"></script>
+    <link rel="stylesheet" href="Sass/styles.css">
+    <title>Search</title>
+</head>
+
+<body>
+    <div class="background-header gridrowfull">
+        <div class="container-geral gridrow">
+            <div class="logo col-d-3 col-6">
+                <a href="./index.html"><img src="img/header/logo.png" alt="logo"/></a>
+                </div>
+            <div class="container-links none col-d-5">
+                <div class="none">
+                    <p>É comerciante?</p>
+                    <a href="./search.html"><p>Pesquisar</p></a>
+                    <p>Roteiros</p>
+                    <p>Blog</p>
+                </div>
+            </div>
+            <div class="container-language none col-d-2">
+                <p><img src="img/header/icon-language.png" alt="language icon"/> PT / <span>EN</span></p>
+            </div>
+            <div class="login col-d-2 none"><a href="./profile.html"><p>Registar /<span> Login</span></p></a></div>
+            <div class="img-header-hamburguer col-6">
+                <img src="img/header/menu.svg">
+            </div>
+        </div>
+    </div>
+    <div class="container-geral  gridrow">
+        <div class="container-titulo gridrowfull">
+            <h1>
+                Bai-me à loja <span>Shop In Porto</span>
+            </h1>
+        </div>
+        <div class="container-search  gridrowfull">
+            <div class="search-tag gridrowfull">
+                <div class="search-white-area col-d-9">
+                    <div class="search-tag-result">
+                        <input class="form-control" id="choices-text-remove-button" type="text" value="Example"
+                            placeholder="Enter something" />
+                    </div>
+                </div>
+                <div class="button-search col-d-3 gridrow">
+                    <button class="desktop" type="submit" onclick="searchKeyword()" class="search-submit">
+                        Pesquisar
+                    </button>
+                    <button class="mobile"  type="submit" onclick="searchKeyword()" class="search-submit">
+                        <img src="img/search/button-mobile.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container-filters-product-cards gridrowfull nogutter">
+            <div class="container-filters col-d-4  pr">
+                <div class="container-filter-types mt">
+                    <div class="title-show-more">
+                        <h2 class="filter-search">
+                            Categories
+                        </h2>
+                    </div>
+                    <div class="categories-checkbox">
+                        <input type="checkbox" onclick="updateFilters('C', 123)" id="animais" name="animais"
+                            value="animais">
+                        <label for="animais"> Animais</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 128)" id="antiguidades" name="antiguidades"
+                            value="antiguidades">
+                        <label for="antiguidades"> Antiguidades e Obras de arte</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 99)" id="cultura" name="cultura"
+                            value="cultura">
+                        <label for="cultura"> Cultura e Lazer</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 119)" id="flores" name="flores"
+                            value="flores">
+                        <label for="flores"> Flores e Plantas</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 126)" id="fotografia-papelaria"
+                            name="fotografia-papelaria" value="fotografia-papelaria">
+                        <label for="fotografia-papelaria"> Fotografia, Papelaria e Gráfica</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 87)" id="lar-bricolage-categories"
+                            name="lar-bricolage" value="lar-bricolage">
+                        <label for="lar-bricolage-categories"> Lar, Decoração e Bricolage</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 98)" id="moda-contemporanea"
+                            name="moda-contemporanea" value="moda-contemporanea">
+                        <label for="moda-contemporanea"> Moda Contemporânea e Vintage</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 125)" id="musica" name="musica"
+                            value="musica">
+                        <label for="musica"> Música</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 117)" id="ourivesaria" name="ourivesaria"
+                            value="ourivesaria">
+                        <label for="ourivesaria"> Ourivesaria</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 111)" id="outra" name="outra" value="outra">
+                        <label for="outra"> Outra</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 116)" id="produtos-alimentares"
+                            name="produtos-alimentares" value="produtos-alimentares">
+                        <label for="produtos-alimentares"> Produtos Alimentares</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 43)" id="restauracao-bebida"
+                            name="restauracao-bebida" value="restauracao-bebida">
+                        <label for="restauracao-bebida"> Restauração e Bebida</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 120)" id="sapatarias" name="sapatarias"
+                            value="sapatarias">
+                        <label for="sapatarias"> Sapatarias, Acessórios e Marroquinaria</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 109)" id="Saude" name="Saude" value="Saude">
+                        <label for="Saude"> Saúde, Bem Estar e Cuidados Pessoais</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 28)" id="tec" name="tec" value="tec">
+                        <label for="tec"> Tecnologia e Equipamentos Eletrónicos</label><br>
+                        <input type="checkbox" onclick="updateFilters('C', 115)" id="turismo" name="turismo"
+                            value="turismo">
+                        <label for="turismo"> Turismo</label><br>
+                        <div class="ver-mais-filters">
+                            <p><strong>Ver mais categorias</strong><img src="img/search/seta-baixo.png"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-filter-types mt">
+                    <div class="title-show-more">
+                        <h2 class="filter-search">Zonas</h2>
+                    </div>
+                    <div class="zonas-checkbox">
+                        <input type="checkbox" onclick="updateFilters('Z', 238)" id="antas" name="antas" value="antas">
+                        <label for="antas"> Antas</label><br>
+                        <input type="checkbox" onclick="updateFilters('Z', 240)" id="asprela" name="asprela"
+                            value="asprela">
+                        <label for="asprela"> Asprela</label><br>
+                        <input type="checkbox" onclick="updateFilters('Z', 234)" id="baixa" name="baixa" value="baixa">
+                        <label for="baixa"> Baixa</label><br>
+                        <input type="checkbox" onclick="updateFilters('Z', 230)" id="boavista" name="boavista"
+                            value="boavista">
+                        <label for="boavista"> Boavista</label><br>
+                        <input type="checkbox" onclick="updateFilters('Z', 236)" id="campanha" name="campanha"
+                            value="campanha">
+                        <label for="campanha"> Campanhã</label><br>
+                        <input type="checkbox" onclick="updateFilters('Z', 231)" id="carvalhido" name="carvalhido"
+                            value="carvalhido">
+                        <label for="carvalhido"> Carvalhido</label><br>
+                        <input type="checkbox" onclick="updateFilters('Z', 235)" id="centro-historico"
+                            name="centro-historico" value="centro-historico">
+                        <label for="centro-historico"> Centro Histórico</label><br>
+                        <input type="checkbox" onclick="updateFilters('Z', 227)" id="foz-mar" name="foz-mar"
+                            value="foz-mar">
+                        <label for="foz-mar"> Foz Mar</label><br>
+                        <div class="ver-mais-filters">
+                            <p><strong>Ver mais zonas</strong><img src="img/search/seta-baixo.png"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-filter-types mt mb">
+                    <div class="title-show-more">
+                        <h2 class="filter-search">
+                            Destaque
+                        </h2>
+                    </div>
+                    <div class="destaque-checkbox">
+                        <input type="checkbox" id="porto-tradiçao" name="porto-tradiçao" value="porto-tradiçao">
+                        <label for="porto-tradiçao"> Porto de tradição</label><br>
+                        <input type="checkbox" id="hoje-porto" name="hoje-porto" value="hoje-porto">
+                        <label for="hoje-porto"> Hoje no Porto</label><br>
+                        <input type="checkbox" id="top-lojas" name="top-lojas" value="top-lojas">
+                        <label for="top-lojas"> Top Lojas</label><br>
+                        <input type="checkbox" id="promoçoes-porto" name="promoçoes-porto" value="promoçoes-porto">
+                        <label for="promoçoes-porto"> Promoções</label><br>
+                        <input type="checkbox" id="take-away" name="take-away" value="take-away">
+                        <label for="take-away"> Take away</label><br>
+                        <input type="checkbox" id="lar-bricolage-destaque" name="lar-bricolage-destaque"
+                            value="lar-bricolage-destaque">
+                        <label for="lar-bricolage-destaque"> Lar, Decoração e Bricolage</label><br>
+                        <input type="checkbox" id="entrega-domicilio" name="entrega-domicilio"
+                            value="entrega-domicilio">
+                        <label for="entrega-domicilio"> Entrega ao Domicílio</label><br>
+                    </div>
+                </div>
+            </div>
+            <div class="container-product-list  mt col-d-8 col-12 pl" id="product-card-list">
+                <div class="container-product-card gridrowfull">
+                    <div class="product-card-img col-d-4 col-12">
+                        <img class="imgfit" id="img-id" src="img/search/loja-1.png">
+                    </div>
+                    <div class="product-card-description col-d-6 col-12 p2">
+                        <div class="product-card-name-description-schedule-address-promo">
+                            <h3 class="h3-search-category">Gatos </h3>   
+                            <h4 class="h4-search-category">Esquina dos Bichinhos</h4>
+                            <p class="p-schedule-search"><img src="img/search/schedule.png"> Seg-Sex:9h:00 - 19:00 |
+                                Sáb: 10h00 - 20h00</p>
+                            <p class="p-address-search"><img src="img/search/address.png"> R. do Alferes Malheiro nº
+                                226, 4000-057 Porto</p>
+                            <div class="promocoes-product-card-search">
+                                <p class="p-promos-search">Mais de 4 promoções em Loja</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-map-fav-share-rate col-d-2 col-12 p2">
+                        <div class="container-map-fav-share">
+                            <img src="img/search/map.png">
+                            <img src="img/search/heart.png">
+                            <img src="img/search/share.png">
+                        </div>
+                        <div class="rate-search">
+                            <p class="textcenter">
+                                <img src="img/search/favorite.png">
+                                <strong>
+                                    4,3/5
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-image"><img class="imgfit visivel-d" src="img/product_page/bannerAPP.svg" alt="">
+        <img src="img/index/banner_APP-mobile.svg" class="visivel-sem-glide" alt="">
+    </div>
+    <div class="container-footer gridrowfull">
+        <div class="container-footer-class gridrow">
+            <div class="shop-in-porto-footer col-d-3">
+                <p>
+                    Shop in Porto
+                </p>
+                <ul>
+                    <li>Loja</li>
+                    <li>Roteiros</li>
+                    <li>Hoje No Porto</li>
+                    <li>Promoções</li>
+                    <li>Top Lojas</li>
+                    <li>Sobre Nós</li>
+                </ul>
+                <img class="show-mobile" src="img/footer/seta-pa-baixo.svg">
+            </div>
+            <div class="perfil-footer col-d-3">
+                <p>
+                    Shop in Porto
+                </p>
+                <ul>
+                    <li>Informação Pessoal</li>
+                    <li>Lojas Favoritas</li>
+                    <li>Check-ins</li>
+                    <li>Avaliações</li>
+                    <li>Log In</li>
+                </ul>
+                <img class="show-mobile" src="img/footer/seta-pa-baixo.svg">
+            </div>
+            <div class="informacao-legal-footer col-d-3">
+                <p>
+                    Informação pessoal
+                </p>
+                <ul>
+                    <li>Avisos Legais e privacidade</li>
+                    <li>Termos e condições</li>
+                </ul>
+                <img class="show-mobile" src="img/footer/seta-pa-baixo.svg">
+            </div>
+
+            <div class="logo-footer-social-media col-d-2 offset-d-1 col-12 offset-0 textright">
+                <div class="logo-footer show-desktop">
+                    <img src="img/footer/logo.svg">
+                </div>
+                <div class="social-media-footer">
+                    <img src="img/footer/instagram.svg">
+                    <img src="img/footer/facebook.svg">
+                    <img src="img/footer/youtube.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="camara-logo-porto-footer gridrowfull">
+        <div class="pad-footer gridrow">
+            <div class="camara-footer">
+                2020 &copy; <span>Câmara Munincipal do Porto</span>
+            </div>
+            <div class="logo-porto-footer">
+                <img src="img/footer/logo-porto.svg">
+            </div>
+        </div>
+    </div>
+    <script src="js/search.js"></script>
+    <script src="js/choises.js"></script>
+
+</body>
+
+</html>

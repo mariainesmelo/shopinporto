@@ -1,0 +1,246 @@
+{
+   "openapi":"3.0.1",
+   "info":{
+      "version":"1.0.0",
+      "title":"Stores",
+      "description":"Store management API",
+      "contact":{
+         "name":"Henrique Vale",
+         "email":"hmfvale@gmail.com"
+      },
+      "license":{
+         "name":"Apache 2.0",
+         "url":"https://www.apache.org/licenses/LICENSE-2.0.html"
+      }
+   },
+   "servers":[
+      {
+         "url":"http://localhost:5000/api",
+         "description":"Local server"
+      }
+   ],
+   "tags":[
+      {
+         "name":"Store Operations"
+      }
+   ],
+   "paths":{
+      "/getProductsList":{
+         "get":{
+            "tags":[
+               "Store Operations"
+            ],
+            "description":"Get store list",
+            "operationId":"getStoresList",
+            "parameters":[
+               {
+                  "name":"nStores",
+                  "in":"query",
+                  "schema":{
+                     "type":"integer",
+                     "default":10
+                  },
+                  "required":false
+               },
+               {
+                 "name":"sortBy",
+                 "in":"query",
+                 "schema":{
+                    "type":"string",
+                    "default":"price"
+                 },
+                 "required":false
+              }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Stores were obtained",
+                  "content":{
+                     "application/json":{
+                        "schema":{
+                           "$ref":"#/components/schemas/StoreList"
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      },
+      "/getStore":{
+        "get":{
+           "tags":[
+              "Store Operations"
+           ],
+           "description":"Get a single store",
+           "operationId":"getStore",
+           "parameters":[
+              {
+                 "name":"StoreId",
+                 "in":"query",
+                 "schema":{
+                    "type":"integer"
+                 },
+                 "required":true
+              }
+           ],
+           "responses":{
+              "200":{
+                 "description":"Store is obtained",
+                 "content":{
+                    "application/json":{
+                       "schema":{
+                          "$ref":"#/components/schemas/Store"
+                       }
+                    }
+                 }
+              },
+              "400":{
+                 "description":"Missing parameters",
+                 "content":{
+                    "application/json":{
+                       "schema":{
+                          "$ref":"#/components/schemas/Error"
+                       },
+                       "example":{
+                          "message":"StoreId is missing",
+                          "internal_code":"missing_parameters"
+                       }
+                    }
+                 }
+              },
+              "404":{
+                 "description":"Missing parameters",
+                 "content":{
+                    "application/json":{
+                       "schema":{
+                          "$ref":"#/components/schemas/Error"
+                       },
+                       "example":{
+                          "message":"Store was not found",
+                          "internal_code":"missing_product"
+                       }
+                    }
+                 }
+              }
+           }
+        }
+     }
+   },
+   "components":{
+     "schemas":{
+        "id":{
+           "type":"integer",
+           "example": 1
+        },
+        "name":{
+           "type":"string",
+           "example":"Purple naiky"
+        },
+        "partnership":{
+           "type":"string",
+           "example":"Camden"
+        },
+        "brand":{
+           "type":"string",
+           "example":"Florence A. Cook"
+        },
+        "quantity":{
+           "type":"integer",
+           "example": 1
+        },
+        "madeIn":{
+           "type":"string",
+           "example":"Cocos (Keeling) Islands"
+        },
+        "description":{
+           "type":"string",
+           "example":"sem, vitae aliquam eros turpis non enim. Mauris quis"
+        },
+        "image":{
+           "type":"string",
+           "example":"product1.jpg"
+        },
+        "category":{
+           "type":"array",
+           "example": [1,2]
+        },
+        "score":{
+           "type":"integer",
+           "example": 4.5
+        },
+        "sizes":{
+           "type":"object",
+           "properties":{
+              "1":{
+                 "$ref":"#/components/schemas/quantity"
+              },
+              "2":{
+                 "$ref":"#/components/schemas/quantity"
+              },
+              "3":{
+                 "$ref":"#/components/schemas/quantity"
+              },
+              "4":{
+                 "$ref":"#/components/schemas/quantity"
+              }
+           },
+           "example": { "1":1, "2":3 }
+        },
+        "Store":{
+           "type":"object",
+           "properties":{
+              "id":{
+                 "$ref":"#/components/schemas/id"
+              },
+              "name":{
+                 "$ref":"#/components/schemas/name"
+              },
+              "partnership":{
+                 "$ref":"#/components/schemas/partnership"
+              },
+              "brand":{
+                 "$ref":"#/components/schemas/brand"
+              },
+              "quantity":{
+                 "$ref":"#/components/schemas/quantity"
+              },
+              "madeIn":{
+                 "$ref":"#/components/schemas/madeIn"
+              },
+              "description":{
+                 "$ref":"#/components/schemas/description"
+              },
+              "image":{
+                 "$ref":"#/components/schemas/image"
+              },
+              "category":{
+                 "$ref":"#/components/schemas/category"
+              },
+              "score":{
+                 "$ref":"#/components/schemas/score"
+              },
+              "sizes":{
+                 "$ref":"#/components/schemas/sizes"
+              }        
+           }
+        },
+        "StoreList":{
+           "type": "array",
+           "items": { 
+              "$ref":"#/components/schemas/Store"
+           }
+        },
+        "Error":{
+           "type":"object",
+           "properties":{
+              "message":{
+                 "type":"string"
+              },
+              "internal_code":{
+                 "type":"string"
+              }
+           }
+        }
+     }
+  }
+}

@@ -1,0 +1,25 @@
+//principal 
+// import
+
+@import 'normalize';
+@import 'variables';
+@import 'fonts';
+@import 'utils';
+@import 'grid';
+@import 'header';
+@import 'index';
+@import 'search';
+@import 'profile';
+@import 'glide';
+@import 'product_page';
+@import 'footer';
+
+*{
+    box-sizing:  border-box;
+    
+}
+
+body{
+    font-family: $bodyfontfinal, sans-serif;
+    background-color:  rgba(44, 161, 198, 0.15);
+}

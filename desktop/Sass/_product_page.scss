@@ -1,0 +1,632 @@
+body{
+    color: #10324D;
+}
+
+
+.container-product-image{
+    margin-top:24px;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    .big-image{
+    height:507px;
+    width:540px;
+    border:1px solid rgba(16, 50, 77, 0.1);
+    border-radius: 5px;
+    background-color: rgba(16, 50, 77, 0.1);
+    }  
+    .small-four-images{
+        display:flex;
+        flex-direction: column;
+        @media(max-width: $mobile){
+            display: none;
+        }
+        .small-images-row-1{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom:15px;
+            .small{
+                height:242px;
+                width:258px;
+                border:1px solid rgba(16, 50, 77, 0.1);
+                border-radius: 5px;
+                background-color: rgba(16, 50, 77, 0.1);
+            }
+            .small1margin{
+                margin-right:15px;
+            }
+            
+        }
+        .small-images-row-2{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top:15px;
+            .small{
+                height:242px;
+                width:258px;
+                border:1px solid rgba(16, 50, 77, 0.1);
+                border-radius: 5px;
+                background-color: rgba(16, 50, 77, 0.1);
+                }
+                .small2margin{
+                    margin-right:15px;
+                }
+        }
+    }
+}
+
+
+.container-info-loja{
+    display: flex;
+    .nome-categoria-icones-partilha-etc{
+    display: flex;
+    justify-content: space-between;
+        .nome-categoria-info-loja{
+            font-family: 'Regular bold';
+        }
+        .icones-partilha-etc{
+        display:flex;
+        flex-direction: row;
+        margin-top:20px;
+        }
+    }
+    .nome-loja{
+        h1{
+        font-family: 'Regular Bold';
+        font-size: 48px;
+        margin-top:0;
+        margin-bottom:0;
+        color: #10324D;
+        @media(max-width: $mobile){
+            font-size: 32px;
+            line-height: 38px;
+        }
+        }
+    }
+    .reviews-loja {
+    display: flex;
+    justify-content: flex-end;
+        .review-geral-product-page{
+            background-color: rgba(44, 161, 198, 0.15);
+            border-radius: 5px;
+            padding: 5px;
+            font-family: 'Regular Bold';
+            font-size: 24px;
+            margin-top:0;
+            margin-bottom:0;
+            span{
+                font-size:16px;
+            }
+        }
+
+    }
+}
+
+
+.as-nossas-promocoes{
+    font-family: 'Regular Bold';
+    font-size: 32px;
+    color: #10324D;
+    margin-top:0;
+    margin-bottom: 24px;
+
+}
+
+.promocoes-1{
+    box-shadow: $boxShadow;
+    background-color: white;
+    padding:32px;
+    border-radius: 5px;
+
+    h3 {
+        font-family: 'Regular Bold';
+        font-size: 24px;
+        margin: 0;
+        color: #10324D;
+    }
+    div 
+        {
+        display:flex;
+        align-items: center;
+        .data-promocoes-profile {
+            font-family: 'Regular Bold';
+            background-color: rgba(44, 161, 198, 0.15);
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            span{
+                color: $primary;
+            }
+            img{
+                margin-right: 5px;
+            }
+        }
+    }
+    .button-promo-profile{
+        display:flex;
+        justify-content: space-between;
+        .promocoes-button{
+            font-family: 'Regular Bold';
+            border-radius: 5px;
+            background-color: #2CA1C6;
+            color: white;
+            padding: 15px 60px;
+            font-size: 16px;
+            border: none;
+        }
+    }
+
+}
+
+.row-loja{
+    display:flex;
+    align-items: center;
+    flex:1;
+}
+.product-card-background{
+    box-shadow: $boxShadow;
+    background-color: white;
+    border-radius: 5px;
+    padding: 48px!important;
+}
+
+.product-page-description{
+    h2{
+        font-family: 'Regular Bold';
+        font-size:32px;
+        color: #10324D;
+        line-height: 38px;
+        span{
+            color:$primary;
+        }
+    }
+}
+
+.comerciante-photo-description {
+    display:flex;
+    flex-direction: column;
+    h2{
+        font-family: 'Regular Bold';
+        font-size: 32px;
+    }
+    .comerciante-description-row{
+        display:flex;
+        @media(max-width: $mobile){
+            flex-direction: column;
+            align-items: center;
+        }
+        .comerciante-photo{
+            display:flex;
+            flex-direction: column;
+            width:50%;
+            align-items: center;
+            margin-top:30px;
+            
+            .comerciante-nome{
+                font-family: 'Regular Bold';
+                font-size:24px;
+                margin-bottom: 0;
+            }
+            .comerciante-idade{
+                color: #10324D;
+                opacity: 0.75;
+                margin-top:8px;
+            }
+        }
+        .comerciante-description-text{
+            width:50%;
+            @media(max-width: $mobile){
+                width: 100%;
+            }
+            .le-mais-blogue{
+                font-family: 'Regular Bold';
+                margin-top:30px;
+
+            }
+        }
+
+    }
+}
+
+
+.como-chegar{
+    padding: 15px;
+    h2{
+        font-family: 'Regular Bold';
+        font-size: 32px;
+    }
+    span{
+        color:$primary;
+        font-family: 'Regular Bold';
+    }
+    .como-chegar-carro{
+        display:flex; 
+        @media(max-width: $mobile){
+            flex-direction: column;
+        }
+        border-bottom: 1px solid rgba(16, 50, 77, 0.1);
+        .carro-1{
+            width:20%;
+            font-family: 'Regular Bold';
+            @media(max-width: $mobile){
+                display:flex;
+            }
+        }
+    }
+    .como-chegar-autocarro{
+        display: flex;
+        @media(max-width: $mobile){
+            flex-direction: column;
+        }
+        border-bottom: 1px solid rgba(16, 50, 77, 0.1);
+        .autocarro-1{
+            width:20%;
+            font-family: 'Regular Bold';
+            @media(max-width: $mobile){
+                display:flex;
+            }
+        }
+    }
+    .como-chegar-metro{
+        display: flex;
+        border-bottom:  1px solid rgba(16, 50, 77, 0.1);
+        @media(max-width: $mobile){
+            flex-direction: column;
+        }
+        .metro-1{
+            width: 20%;
+            font-family: 'Regular Bold';
+            @media(max-width: $mobile){
+                display:flex;
+            }
+        }
+    }
+    .como-chegar-pe{
+        display: flex;
+        border-bottom: 1px solid rgba(16, 50, 77, 0.1);
+        @media(max-width: $mobile){
+            flex-direction: column;
+        }
+        .a-pe-1{
+            width: 20%;
+            font-family: 'Regular Bold';
+            @media(max-width: $mobile){
+                display:flex;
+            }
+        }
+    }
+    .parque-estacionamento{
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-family: 'Regular Bold';
+            font-size: 32px;
+        }
+        .container-card-parque-estacionamento{
+            display: flex;
+            @media(max-width: $mobile){
+                display:block;
+            }
+            .card-parque-estacionamento-1{
+                font-family: 'Regular Bold';
+                width:40%;
+                padding:15px;
+                background: #FFFFFF;
+                border: 1px solid rgba(16, 50, 77, 0.05);
+                box-sizing: border-box;
+                border-radius: 5px;
+                margin-right: 7.5px;
+                @media(max-width: $mobile){
+                    width: 100%;
+                    margin:0;
+                }
+                p{
+                    margin:0;
+                    
+                }
+            }
+            .card-parque-estacionamento-2{
+                font-family: 'Regular Bold';
+                width:40%;
+                padding:15px;
+                background: #FFFFFF;
+                border: 1px solid rgba(16, 50, 77, 0.05);
+                box-sizing: border-box;
+                border-radius: 5px;
+                margin-left:7.5px; 
+                @media(max-width: $mobile){
+                    width: 100%;
+                    margin:0;
+                    margin-top: 10px;
+                }
+                p{
+                    margin:0;
+                        }
+            }
+        }
+    }
+}
+
+.o-que-vendemos-marcas{
+    .lista-o-que-vendemos{
+        h3{
+            font-family: 'Regular Bold';
+            font-size:32px;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+                list-style: none;
+                border-bottom: 1px solid rgba(16, 50, 77, 0.15);
+                padding:10px;
+                }
+        }
+        ul:not(:first-of-type){
+            padding-left:10px!important;
+        }
+    }
+    h3{
+        font-family: 'Regular Bold';
+        font-size:32px;
+    }
+    .marcas-disponiveis{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media(max-width: $mobile){
+            .first-row-product-page{
+                flex-basis: 33.3%;
+            }
+            .second-row-product-page{
+                flex-basis: 50%;
+            }
+        }
+    }
+}
+
+
+.classif-aval-h3{
+    margin-top:60px;
+    margin-bottom:20px;
+    font-family: 'Regular Bold';
+    font-size: 32px;
+}
+
+.classificacoes-avaliacoes{
+    .card-avaliacao-1{
+        display:flex;
+        .name-data-avaliacao{
+            padding-left:32px;
+            .name-review-avaliacao-row{
+                display:flex;
+                justify-content: space-between;
+                p{
+                    margin-bottom:0;
+                    font-family: 'Regular Bold';
+                    font-size: 20px;
+                    span{
+                        font-size: 16px;
+                    }
+                }
+                .review-background{
+                    background-color: rgba(44, 161, 198, 0.15);
+                    border-radius: 5px;
+                    padding: 5px;
+                    @media(max-width: $mobile){
+                        display:none;
+                    }
+                }
+                
+            }
+            .data-avaliacao{
+                color: #10324D;
+                opacity: 0.75;
+                margin-top:0;
+            }
+            .review-background-2{
+                display:none;
+                @media(max-width:$mobile){
+                    display:flex;
+                    margin-bottom:0;
+                    font-family: 'Regular Bold';
+                    font-size: 20px;
+                    background-color: rgba(44, 161, 198, 0.15);
+                    border-radius: 5px;
+                    padding: 5px;
+                    width: 80px;
+                    justify-content: flex-end;
+                    margin-left: 90px;
+                }                
+            }
+        }
+    }
+    .ver-todos-oscomentários{
+        font-family: 'Regular Bold';
+    }
+}
+
+
+.mobile{
+    display:none!important;
+    @media(max-width: $mobile){
+        display: block!important;
+    }
+}
+
+.desktop{
+    display:block;
+    @media(max-width: $mobile){
+        display: none;
+    }
+}
+// O que procuras
+
+.container-filtro-geral{
+    .filtro-titulo{
+        h2{
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+}
+
+
+.right-side-info-sticky{
+    display:flex;
+    flex-direction: column;
+    .podemos-ajudar{
+        display:flex;
+        flex-direction: column;
+        background-color: $secondary;
+        color:#FFFFFF;
+        padding:34px;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        h4{
+            font-family: 'Regular Bold';
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 29px;
+            width:70%
+        }
+        p{
+            font-family: 'Regular Regular';
+            margin-top:0;
+            margin-bottom:5px;
+        }
+    }
+    .fale-connosco-chega-ate-nos-mapa{
+        display:flex;
+        flex-direction: column;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 10px;
+        height: 930px;
+        background-color: white;
+        padding:34px;
+        padding-top:10px;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        @media(max-width: $mobile){
+            position:unset;
+        }
+        .fale-connosco{
+            .icon-share-product-page{
+                margin-top:0;
+                margin-bottom: 0;
+            }
+            h5{
+                font-family: 'Regular Bold';
+                font-size: 24px;
+                margin-top:0;
+                margin-bottom:30px;
+            }
+            .email-fale-connosco{
+                .title-email{
+                    font-family:'Regular Bold';
+                    margin-bottom: 0;
+                }
+                .descricao-email{
+                    margin-top:10px;
+                }
+            }
+            .telemovel-fale-connosco{
+                .title-tlmv{
+                    font-family:'Regular Bold'; 
+                    margin-bottom: 0;
+                    margin-top:24px;
+                }
+                .numero-escondido{
+                    font-family: 'Regular Bold';
+                    color:$primary;
+                    background-color: rgba(44, 161, 198, 0.15);
+                    border-radius: 5px;
+                    padding: 6px;
+                    width:35%;
+                    margin-top:10px;
+                }
+            }
+        }
+        .chega-ate-nos{
+            h5{
+                font-family: 'Regular Bold';
+                font-size: 24px; 
+                margin-bottom: 30px;
+            }
+            .horario-chega-ate-nos{
+                .title-horario{
+                    font-family: 'Regular Bold';
+                    margin-bottom: 0;
+                }
+                .horario-description{
+                    margin-top:10px;
+                    width:80%
+                }
+            }
+            .morada-chega-ate-nos{
+                .title-morada{
+                    font-family: 'Regular Bold';
+                    margin-bottom: 0;
+                }
+                .morada-description{
+                    margin-top:10px; 
+                    width:50%;
+                }
+            }
+            .mapa{
+                button{
+                    height:48px;
+                    background-color: $primary;
+                    color:white;
+                    border:none;
+                    border-radius: 5px;
+                    width:100%
+                }
+            }
+        }
+        
+    }
+}
+
+.nas-redondezas-h3-prev-next{
+    display:flex;
+    justify-content: space-between;
+    margin-top:30px;
+    h3{
+    font-family: 'Regular Bold';
+    font-size: 32px;
+    }
+}
+
+
+
+.nas-redondezas{
+    display:flex;
+    justify-content: space-between;
+    .card-redondezas{
+        width:100%;
+    } 
+    .product-card-background-redondezas{
+    box-shadow: $boxShadow;
+    background-color: white;
+    border-radius: 5px;
+    padding: 16px!important;
+}
+}
+
+
+.banner-image{
+    width:100%;
+    margin-top:100px;
+    @media(max-width:$mobile){
+        margin-top: 101px;  
+        img{
+            width:100%;
+        }
+    }
+}
