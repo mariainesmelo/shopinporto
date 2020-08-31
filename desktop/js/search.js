@@ -2,7 +2,7 @@
 
 let productListArrayGlobal = [];
 let filteredProductsList = [];
-let activeFilters = {'C': [], 'Z': [], 'K': []};
+let activeFilters = { 'C': [], 'Z': [], 'K': [] };
 
 // fetchProduts = faz o pedido a API para ir buscar os dados
 
@@ -17,10 +17,6 @@ const updateDOM = (productListArray) => {
     const productListElement = document.getElementById('product-card-list');
     productListElement.innerHTML = '';
     productListArray.forEach(product => {
-        /*let categories = '';
-        product.category.forEach(idNumber => {
-            categories += productCategories[idNumber] + ' ';
-        })*/
         productListElement.innerHTML += `
         <a class="ancora-product-page" href="./product_page.html"><div class="container-product-card gridrowfull mt">
             <div class="product-card-img col-d-4 col-12">
@@ -84,9 +80,9 @@ const sortZone = (productsList, zoneList) => {
     }
 }
 
-// loadPageContent = 
 
-//esta lista atualiza os filtros ativos, com a array active filters. productFilter elemento que quero adicionar ou remover 
+
+//updateFilters atualiza os filtros ativos, com a array active filters. productFilter elemento que quero adicionar ou remover 
 
 const updateFilters = (filterType, filterID) => {
     console.log("searching...")
@@ -112,20 +108,9 @@ const loadPageContent = (sortBy) => {
         productListArrayGlobal = jsonData.data;
         updateDOM(productListArrayGlobal);
     });
-    /*     sortCategory();
-        sortZone(); */
-
-
 }
 
-/* const sortFilter = (el) => {
-    const sortBy = el.options[el.selectedIndex].value.toLowerCase();
-    loadPageContent(sortBy);
-} */
 
-
-
-//Choi.l.es
 
 var textRemove = new Choices(document.getElementById('choices-text-remove-button'), {
     delimiter: ',',
@@ -140,23 +125,14 @@ const searchKeyword = () => {
     updateFilters('K', choices[0] === "" ? [] : choices);
 }
 
-/* chamar o sort keywords com filtros que são as palavras que estão no html depois pegamos no product List para ter todas as lojas mas guardamos, 
-vamos filtrar essa listagem de lojas com esse filtro  quando filtramos vamos a cada uma das lojas individuais 
-Se existir palavra que queremos no store.keywords ela fica no array filter 
-*/
-
-
 const sortKeywords = (keywordList) => {
     console.log('k', keywordList);
     if (keywordList.length > 0) {
-        // filteredProductsList = productsList;
         keywordList.forEach(keyword => {
             filteredProductsList = filteredProductsList.filter(store => store.keywords && store.keywords.includes(keyword))
         })
     }
 }
 
-
-//Event listener -> qd dá load a página
 
 document.addEventListener('DOMContentLoaded', () => loadPageContent('price'))

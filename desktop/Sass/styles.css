@@ -230,16 +230,6 @@ template {
   font-style: normal;
 }
 
-/*@font-face {
-  font-family: 'Regular Black';
-  src: url('/regular_font/Regular-Black.eot');
-  src: url('/regular_font/Regular-Black.eot?#iefix') format('embedded-opentype'),
-      url('/regular_font/Regular-Black.woff') format('woff'),
-      url('/regular_font/Regular-Black.svg#Regular-Black') format('svg');
-
-  font-weight: 900;
-  font-style: normal;
-}*/
 @font-face {
   font-family: 'Regular Regular';
   src: url("/regular_font/Regular-Regular.eot");
@@ -280,102 +270,6 @@ template {
   font-style: italic;
 }
 
-/*
-
-
-@font-face {
-  font-family: 'Regular Regular Italic';
-  src: url('/regular_font/Regular-RegularItalic.eot');
-  src: url('/regular_font/Regular-RegularItalic.eot?#iefix') format('embedded-opentype'),
-      url('/regular_font/Regular-RegularItalic.woff') format('woff'),
-      url('/regular_font/Regular-RegularItalic.svg#Regular-RegularItalic') format('svg'),
-      url('/regular_font/Regular-RegularItalic.woff2') format('woff2'),
-      url('/regular_font/Regular-RegularItalic.ttf') format('ttf');
-      font-weight:540;
-      font-style:"italic";
-}
-
-@font-face {
-  font-family: 'Regular Extrabold';
-  src: url('/regular_font/Regular-Extrabold.eot');
-  src: url('/regular_font/Regular-Extrabold.eot?#iefix') format('embedded-opentype'),
-      url('/regular_font/Regular-Extrabold.woff') format('woff'),
-      url('/regular_font/Regular-Extrabold.svg#Regular-Extrabold') format('svg'),
-      url('/regular_font/Regular-Extrabold.woff2') format('woff2'),
-      url('/regular_font/Regular-Extrabold.ttf') format('ttf');
-  font-weight: 800;
-  font-style: normal;
-}
-
-/*@font-face {
-  font-family: 'Regular Black';
-  src: url('/regular_font/Regular-Black.eot');
-  src: url('/regular_font/Regular-Black.eot?#iefix') format('embedded-opentype'),
-      url('/regular_font/Regular-Black.woff') format('woff'),
-      url('/regular_font/Regular-Black.svg#Regular-Black') format('svg');
-
-  font-weight: 900;
-  font-style: normal;
-}*/
-/*
-@font-face {
-  font-family: 'Regular Regular';
-  src: url('/regular_font/Regular-Regular.eot');
-  src: url('/regular_font/Regular-Regular.eot?#iefix') format('embedded-opentype'),
-      url('/regular_font/Regular-Regular.svg#Regular-Regular') format('svg'),
-      url('/regular_font/Regular-Regular.woff2') format('woff2'),
-      url('/regular_font/Regular-Regular.ttf') format('ttf');
-  font-weight: 530;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Regular Bold';
-  src: url('/regular_font/Regular-Bold.eot');
-  src: url('/regular_font/Regular-Bold.eot?#iefix') format('embedded-opentype'),
-      url('/regular_font/Regular-Bold.svg#Regular-Bold') format('svg'),
-      url('/regular_font/Regular-Bold.woff2') format('woff2'),
-      url('/regular_font/Regular-Bold.ttf') format('ttf');
-  font-weight: 590;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Regular Medium';
-  src: url('/regular_font/Regular-Medium.eot');
-  src: url('/regular_font/Regular-Medium.eot?#iefix') format('embedded-opentype'),
-      url('/regular_font/Regular-Medium.woff') format('woff'),
-      url('/regular_font/Regular-Medium.svg#Regular-Medium') format('svg'),
-      url('/regular_font/Regular-Medium.woff2') format('woff2'),
-      url('/regular_font/Regular-Medium.ttf') format('ttf');
-  font-weight: 550;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Regular Medium Italic';
-  src: url('/regular_font/Regular-MediumItalic.eot');
-  src: url('/regular_font/Regular-MediumItalic.eot?#iefix') format('embedded-opentype'),
-      url('/regular_font/Regular-MediumItalic.woff') format('woff'),
-      url('/regular_font/Regular-MediumItalic.svg#Regular-MediumItalic') format('svg'),
-      url('/regular_font/Regular-MediumItalic.woff2') format('woff2'),
-      url('/regular_font/Regular-MediumItalic.ttf') format('ttf');
-  font-weight: 560;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Regular Bold Italic';
-  src: url('/regular_font/Regular-BoldItalic.eot');
-  src: url('/regular_font/Regular-BoldItalic.eot?#iefix') format('embedded-opentype'),
-      url('/regular_font/Regular-BoldItalic.woff') format('woff'),
-      url('/regular_font/Regular-BoldItalic.svg#Regular-BoldItalic') format('svg'),
-      url('/regular_font/Regular-BoldItalic.woff2') format('woff2'),
-      url('/regular_font/Regular-BoldItalic.ttf') format('ttf');
-  font-weight: 600;
-  font-style: italic;
-}
-*/
 html {
   color: #000;
   font-weight: 400;
@@ -389,90 +283,6 @@ html {
   }
 }
 
-/* ===================== */
-/* ======= LINKS ======= */
-/* ===================== */
-/*a{
-  @extend .animate;
-  text-decoration: none;
-  color: $black;
-  &:hover{
-    color: $gray;
-  }
-}
-*/
-/* ======================== */
-/* ======= HEADINGS ======= */
-/* ======================== */
-/*h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
-  font-family: $bodyfontfinal, sans-serif;
-  font-weight: 600;
-  // remove default heading margins, 'cause fuck'em!
-  margin: 0;
-  line-height: 1.414; // the square root of "2"
-}
-h1, .h1, h2, .h2{
-  font-size: 2.2rem;
-}
-*/
-/* ============================== */
-/* ======= TEXT ALIGNMENT ======= */
-/* ============================== */
-/*.textleft{
-  text-align: left;
-}
-.textcenter{
-  text-align: center;
-}
-.textright{
-  text-align: right;
-}
-
-/* ===================== */
-/* ======= OTHER ======= */
-/* ===================== */
-/*small, .small{
-  font-size: 0.8rem;
-}
-.uppercase{
-  text-transform: uppercase;
-}
-.fancytext{
-  @extend .small;
-  @extend .uppercase;
-  letter-spacing: 1px;
-  font-family: $titlesfont, sans-serif;
-  font-weight: 400;
-}
-.central-link{
-  //@extend .margintophalf;
-  @extend .textcenter;
-  width: 100%;
-  a{
-    @extend .bg-graydark;
-    @extend .white;
-    @extend .fancytext;
-    display: inline-block;
-    padding: $gridgutter / 3 $gridgutter / 2;
-    &:hover{
-      background-color: $black;
-    }
-  }
-}
-.central-link-light{
-  //@extend .margintophalf;
-  @extend .textcenter;
-  width: 100%;
-  a{
-    @extend .fancytext;
-    display: inline-block;
-    padding: $gridgutter / 3 $gridgutter / 2;
-    &:hover{
-      color: $gray;
-    }
-  }
-}
-*/
 .animate {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -1116,43 +926,6 @@ h1, .h1, h2, .h2{
   }
 }
 
-/* .container-pesquisa-geral{
-    border: solid black 1px;
-    height: 360px;
-    background-image: url("../img/index/banner.png");
-    position: relative;
-    display:flex;
-    justify-content: center;
-    .container-pesquisa-text-area{
-        height: 60px;
-        position: absolute;
-        top: 330px;
-        input{
-            height: 100%;
-            width: 100%;
-            padding-left: 15px;
-            border: none;
-            border-radius: 5px;
-        }
-        .pesquisa-button{
-            a{
-                width: 100%;
-                .pesquisa-button-submit{
-                    height: 60px;
-                    background-color: $primary;
-                    border:none;
-                    color:$white;
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 5px;
-                    font-size: 20px;
-                    line-height: 24px;
-                    }
-            }
-            
-        }        
-    }
-} */
 .container-blog {
   margin-top: 96px;
 }
@@ -1173,6 +946,11 @@ h1, .h1, h2, .h2{
   font-size: 32px;
   line-height: 38px;
   margin-bottom: 16px;
+}
+
+.container-blog .container-promocoes-1 a {
+  text-decoration: none;
+  color: #10324D;
 }
 
 .container-blog .container-promocoes-1 .promocoes-1-index {
@@ -1494,7 +1272,6 @@ h1, .h1, h2, .h2{
       align-self: center;
   font-weight: 590;
   font-size: 32px;
-  /* font-height: 38px; */
   margin-top: -36px;
 }
 
@@ -1566,7 +1343,7 @@ h1, .h1, h2, .h2{
 
 body {
   /* color: #F0F8FB; */
-  color: black;
+  color: #10324D;
   font-family: 'Regular';
 }
 
@@ -2067,7 +1844,6 @@ body {
 
 .container-loja-fav-rot-info .container-lojas-favoritas-profile .loja-favorita-1 .loja-favorita-text-1 h4 {
   margin-top: 0px;
-  /* font-weight: 590; */
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 12px;
@@ -2273,69 +2049,6 @@ body {
   font-family: 'Regular Bold';
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* HTML5 display-role reset for older browsers */
-/* article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-html {
-    box-sizing: border-box;
-
-    &::-webkit-scrollbar {
-	    display: none;
-	}
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-* {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-backspace-visibility: hidden;
-	backface-visibility: hidden;
-	outline: none;
-
-	&:before, &:after {
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		outline: none;
-	}
-
-	&::selection {
-		// background: $red;
-		// color: $white;
-	}
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-} */
 .glide__slide {
   color: black;
 }
@@ -3340,12 +3053,6 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-}
-
-.container-footer .container-footer-class .logo-footer-social-media .logo-footer {
-  /* @media(max-width: $mobile){
-                    display:none; 
-                }*/
 }
 
 @media (max-width: 500px) {
