@@ -2,12 +2,11 @@ body{
     background-color: #E5E5E5;
 }
 
-// Profile + Qr code
 
 .container-profile-qr-code{
     margin-top: 30px;
     .container-profile-background{
-        background-color: #10324D;
+        background-color:$secondary;
         border-radius: 5px;
         box-shadow: $boxShadow;
         position: relative;
@@ -96,7 +95,7 @@ body{
             justify-content: space-between;
             .promocoes-button{
                 border-radius: 5px;
-                background-color: #2CA1C6;
+                background-color: $primary;
                 color: white;
                 padding: 15px 60px;
                 font-size: 16px;
@@ -109,7 +108,7 @@ body{
 .mobile{
     display:none;
     border-radius: 5px;
-    background-color: #2CA1C6;
+    background-color:$primary;
     color: white;
     padding: 15px 60px;
     font-size: 16px;
@@ -117,7 +116,7 @@ body{
     @media(max-width: $mobile){
         display:block;
         border-radius: 5px;
-    background-color: #2CA1C6;
+    background-color: $primary;
     color: white;
     padding: 15px 60px;
     font-size: 16px;
@@ -169,7 +168,6 @@ font-family: 'Regular Bold';
                 }
                 h4{                
                     margin-top: 0px;
-                    /* font-weight: 590; */
                     font-size: 20px;
                     line-height: 24px;
                     margin-bottom: 12px;
