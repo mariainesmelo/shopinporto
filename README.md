@@ -9,11 +9,9 @@ Technologies: HTML5, CSS3, SASS, JavaScript, JSON API, Responsive web developmen
 Tools: Git versions control, yarn
 
 
-## Available commands
-* yarn - will install this project dependencies. You will see a node_modules folder being created on the root of the project.
-* yarn start - will start you local server under the port 5000. 
 
 ## Pages
 * [Homepage](http://localhost:5000)
-* [List](http://localhost:5000/search.html)
+* [Filters](http://localhost:5000/search.html)
 * [Profile](http://localhost:5000/profile.html)
+* [Product Page](http://localhost:5000/product_page.html)
