@@ -1,16 +1,14 @@
-// Variaveis onde estão guardadas as listas de produtos vazias (inicialmente)
 
 let productListArrayGlobal = [];
 let filteredProductsList = [];
 let activeFilters = { 'C': [], 'Z': [], 'K': [] };
 
-// fetchProduts = faz o pedido a API para ir buscar os dados
 
 const fetchProducts = () => {
     return fetch(`/api/getStoresList?nStores=100`).then(resp => resp.json());
 }
 
-//updateDOM = transferir do JS para o HTML
+
 
 
 const updateDOM = (productListArray) => {
@@ -49,14 +47,7 @@ const updateDOM = (productListArray) => {
     })
 }
 
-// Filters
 
-// productListArrayGlobal = Todos os items da db.js (Lista completa)
-
-//filteredProductsList = Todos os items filtrados
-
-
-// Filtro categorias
 
 const sortCategory = (productsList, catList) => {
     if (catList.length > 0) {
@@ -82,7 +73,7 @@ const sortZone = (productsList, zoneList) => {
 
 
 
-//updateFilters atualiza os filtros ativos, com a array active filters. productFilter elemento que quero adicionar ou remover 
+
 
 const updateFilters = (filterType, filterID) => {
     console.log("searching...")
